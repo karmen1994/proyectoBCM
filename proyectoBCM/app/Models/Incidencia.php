@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Incidencia extends Model
 {
     use HasFactory;
+    public function equipo(){
+        return $this->belongsTo(Equipo::class);
+    }
+    public function maestro(){
+        return $this->belongsTo(Maestro::class);
+    }
 }

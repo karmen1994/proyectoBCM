@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Aula extends Model
 {
     use HasFactory;
+    //relacion uno a muchos a la inversa
+
+    public function equipo(){
+        return $this->hasMany(Equipo::class);
+    }
+    public function grupo(){
+        return $this->hasMany(Grupo::class);
+    }
 }

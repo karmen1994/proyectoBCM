@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Maestro extends Model
 {
     use HasFactory;
+    public function incidencia(){
+        return $this->hasMany(Incidencia::class);
+    }
 }
