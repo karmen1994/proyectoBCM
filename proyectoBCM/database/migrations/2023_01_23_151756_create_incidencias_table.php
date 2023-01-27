@@ -21,10 +21,10 @@ return new class extends Migration
             $table->string('estado');
 
             $table->unsignedBigInteger('equipo_id');
-            $table->unsignedBigInteger('maestro_id');
+            $table->unsignedBigInteger('user_id');
  
             $table->foreign('equipo_id')->references('id')->on('equipos')->onDelete('cascade');
-            $table->foreign('maestro_id')->references('id')->on('maestros')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -11,7 +11,7 @@ class Incidencia extends Model
     public function equipo(){
         return $this->belongsTo(Equipo::class);
     }
-    public function maestro(){
-        return $this->belongsTo(Maestro::class);
+    public function user(){
+        return $this->belongsTo(User::class);
     }
 }
