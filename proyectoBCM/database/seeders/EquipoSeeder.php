@@ -27,7 +27,6 @@ class EquipoSeeder extends Seeder
             foreach ($perifericos as $periferico){
                 $equipo->periferico()->attach([$periferico->id]);
             }
-
         }
     }
 }
