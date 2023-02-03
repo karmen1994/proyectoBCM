@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Equipo;
+use App\Models\Periferico;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -15,12 +16,18 @@ class EquipoSeeder extends Seeder
      */
     public function run()
     {
+        $perifericos=Periferico::all();
         for ($i=201; $i <=215 ; $i++) { 
-            Equipo::create([
+            $equipo =Equipo::create([
                 'averiado'=>'',
                 'numero'=>$i,
                 'aula_id'=>'1'
             ]);
+            $equipo->save();
+            foreach ($perifericos as $periferico){
+                $equipo->periferico()->attach([$periferico->id]);
+            }
+
         }
     }
 }

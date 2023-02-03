@@ -16,7 +16,10 @@ class PerifericoSeeder extends Seeder
     public function run()
     {
         Periferico::create([
-            'nombre'=>'Pantalla'
+            'nombre'=>'Pantalla 1'
+        ]);
+        Periferico::create([
+            'nombre'=>'Pantalla 2'
         ]);
         Periferico::create([
             'nombre'=>'Teclado'

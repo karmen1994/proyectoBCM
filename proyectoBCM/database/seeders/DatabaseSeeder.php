@@ -21,11 +21,12 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         $this->call(AulaSeeder::class);
-        $this->call(EquipoPerifericoSeeder::class);
+        //$this->call(EquipoPerifericoSeeder::class);
+        $this->call(PerifericoSeeder::class);
         $this->call(EquipoSeeder::class);
         $this->call(GrupoSeeder::class);
         $this->call(IncidenciaSeeder::class);
-        $this->call(PerifericoSeeder::class);
-         $this->call(AlumnoSeeder::class);
+        $this->call(AlumnoSeeder::class);
+        $this->call(UserSeeder::class);
     }
 }
