@@ -14,24 +14,9 @@
   <div class="container">
       <div class="row m-5">
         <div class="col text-center">
-          <h1 class="display-1">Login</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col m-5 text-center">
-            <div class="form-group m-5">
-                <label class="">Usuario</label>
-                <input class="form-control" type="text" name="usuario">
-            </div>
-            <div class="form-group m-5">
-                <label class="">Contraseña</label>
-                <input class="form-control" type="text" name="contrasena">
-            </div>
-            <button class="btn btn-primary">Acceder</button>
+          <h1 class="display-1">Inventario</h1>
         </div>
       </div>
   </div>
-
-
 </body>
 </html>

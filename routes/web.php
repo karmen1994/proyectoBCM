@@ -14,16 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('hola', function () {
-    return "hola";
-});
-
 Route::get('/', function () {
     return view('welcome');
 });
 
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-//Route::get('/index',[HomeController::class,'index'])->name('main');
+Route::get('/index',[HomeController::class,'index'])->name('main');
+Route::get('aulas',[HomeController::class,'aulas'])->name('aulas');
+Route::get('inventario',[HomeController::class,'inventario'])->name('inventario');
+Route::get('admin',[HomeController::class,'admin'])->name('admin');
