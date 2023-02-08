@@ -14,24 +14,11 @@
   <div class="container">
       <div class="row m-5">
         <div class="col text-center">
-          <h1 class="display-1">IES JOSÉ MARÍA PÉREZ PULIDO</h1>
-        </div>
-      </div>
-      <div class="row">
-          <div class="col text-center mt-5">
-            <a class="btn btn-primary px-4 ms-5" href="{{route('aulas')}}" style="width: 100%; padding:80px;">Incidencias</a>
-          </div>
-          <div class="col text-center m-5">
-            <a class="btn btn-primary" href="{{route('inventario')}}" style="width: 100%; padding:80px;">Inventario</a>
-          </div>
-      </div>
-      <div class="row">
-        <div class="col text-center m-5">
-          <a class="btn btn-primary" href="{{route('admin')}}" style="width: 100%; padding:80px;">Panel de administrador</a>
+          @foreach ($grupos as $grupo)
+                <span>{{$grupo->nombre}}</span>
+          @endforeach
         </div>
       </div>
   </div>
-
-
 </body>
 </html>
