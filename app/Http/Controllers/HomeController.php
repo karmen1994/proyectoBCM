@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Aula;
-use App\Models\Equipo;
-use App\Models\Grupo;
 use App\Models\Incidencia;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -21,13 +19,5 @@ class HomeController extends Controller
     }
     public function inventario(){
         return view('inventario.inventario');
-    }
-    public function admin(){
-        return view('admin.index');
-    }
-    public function equipos(Aula $aula){
-        $grupos=Grupo::where('aula_id',$aula->id)->get();
-        $equipos=Equipo::where('aula_id',$aula->id)->get();
-        return view('incidencias.equipos',compact('equipos','grupos'));
     }
 }

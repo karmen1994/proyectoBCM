@@ -13,8 +13,54 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
   <div class="container">
       <div class="row m-5">
-        <div class="col text-center">
+        <div class="col">
           <h1 class="display-1">Panel de administrador</h1>
+          <ul>
+            <li>
+              <a href="{{route('profesores')}}">Profesores</a>
+              <ul>
+                <li><a href="">Añadir</a></li>
+                <li><a href="">Eliminar</a></li>
+                <li><a href="">Modificar</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="">Incidencias</a>
+              <ul>
+                <li><a href="">Añadir</a></li>
+                <li><a href="">Eliminar</a></li>
+                <li><a href="">Modificar</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="">Aulas</a>
+              <ul>
+                <li><a href="">Añadir</a></li>
+                <li><a href="">Eliminar</a></li>
+                <li><a href="">Modificar</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="">Alumnos</a>
+              <ul>
+                <li><a href="">Añadir</a></li>
+                <li><a href="">Eliminar</a></li>
+                <li><a href="">Modificar</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href=""> Ordenadores</a>
+              <ul>
+                <li><a href="">Añadir</a></li>
+                <li><a href="">Eliminar</a></li>
+                <li><a href="">Modificar</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
   </div>
