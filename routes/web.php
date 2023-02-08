@@ -18,8 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/index',[HomeController::class,'index'])->name('main');
-Route::get('aulas',[HomeController::class,'aulas'])->name('aulas');
-Route::get('aulas/{aula}',[HomeController::class,'equipos'])->name('aulas.equipos');
-Route::get('inventario',[HomeController::class,'inventario'])->name('inventario');
-Route::get('admin',[HomeController::class,'admin'])->name('admin');
+Route::controller(HomeController::class)->group(function() {
+    Route::get('index', 'index')->name('main');
+    Route::get('aulas', 'aulas')->name('aulas');
+    Route::get('inventario', 'inventario')->name('inventario'); 
+});
