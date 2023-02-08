@@ -20,7 +20,4 @@ class HomeController extends Controller
     public function inventario(){
         return view('inventario.inventario');
     }
-    public function admin(){
-        return view('admin.index');
-    }
 }
