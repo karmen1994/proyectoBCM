@@ -22,4 +22,5 @@ Route::controller(HomeController::class)->group(function() {
     Route::get('index', 'index')->name('main');
     Route::get('aulas', 'aulas')->name('aulas');
     Route::get('inventario', 'inventario')->name('inventario'); 
+    //
 });
